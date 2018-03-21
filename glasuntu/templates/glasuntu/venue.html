@@ -4,11 +4,13 @@
 	<title>{{ venue }}</title>
 </head>
 
-<body>
-<div id = "fb-root"></div>
+.body{
+	overflow:scroll;
+}
 
 {% block content %}
-
+<body>
+<div id = "fb-root"></div>
 
 	<main role="main">
 
@@ -71,7 +73,5 @@
 			<div class="fb-comments" data-href="{{ request.build_absolute_url }}" data-numposts="5"></div>
 		</div>
 	</div>
+	{% endblock content %}
   </body>
-
-
-{% endblock content %}
